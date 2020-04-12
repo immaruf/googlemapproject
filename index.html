@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map Project</title>
+    <script src="js/store-data.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="title">STORE LOCATOR</div>
+    <div class="search-container">
+        <div class="search">
+            <input type="text" id="zip-code-input" placeholder="Enter Zip">
+            <i class="fas fa-search" onclick="searchStores()"></i>
+        </div>
+    </div>
+    <div class="stores-list-container">
+        <div class="store-lists">
+            <div class="store-container">
+                <div class="store-info-container">
+                    <div class="store-address">
+                        <span> Beverly Blvd</span>
+                        <span> Los Angeles, CA 90048</span>
+                    </div>
+                    <div class="store-phone">+880-169-969-8080</div>
+                </div>
+                <div class="store-number-container">
+                    <div class="store-number">
+                        1
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap">
+    </script>
+
+</body>
+
+</html>
